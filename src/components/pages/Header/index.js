@@ -13,6 +13,7 @@ function Header() {
     setActiveTab(item.path);
   };
 
+
   const navItems = [
     { path: "home", navItem: "Home" },
     { path: "aboutus", navItem: "About Us" },
@@ -20,6 +21,9 @@ function Header() {
     { path: "careers", navItem: "Careers" },
     { path: "contact", navItem: "Contact" },
   ];
+
+  const pageHeading = navItems.find(i => i.path === activeTab)
+  console.log(pageHeading)
 
   const content = navItems.map((navItem) => {
     const isActive = activeTab === navItem.path;
@@ -59,7 +63,7 @@ function Header() {
       <div className="header-main">
         <img
           src="https://acintyo.co.in/images/logo.png"
-          width={200}
+          width={171}
           alt="acintyo logo"
         />
         <ul className="header-nav-list">{content}</ul>
