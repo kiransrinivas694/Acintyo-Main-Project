@@ -27,18 +27,6 @@
   padding: 40px 0px;
 }
 
-/* @media screen and (max-width: 576px) {
-  .aboutus-details-section {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .aboutus-details-section {
-    width: 80%;
-  }
-} */
-
 .aboutus-title {
   font-size: 26px;
   margin-bottom: 25px;
@@ -56,18 +44,6 @@
   max-width: 960px;
   width: 100%;
 }
-
-/* @media screen and (max-width: 768px) {
-  .horizontal-line {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .horizontal-line {
-    width: 100%;
-  }
-} */
 
 .aboutus-section2 {
   max-width: 960px;
@@ -106,10 +82,6 @@
   .aboutus-section2 {
     flex-direction: column;
   }
-  /* .aboutus-accordion-section {
-    width: 100%;
-    margin-bottom: 20px;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -121,12 +93,6 @@
 .chairman-message-section {
   width: 48%;
 }
-
-/* @media screen and (max-width: 768px) {
-  .chairman-message-section {
-    width: 80%;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   .chairman-message-section {

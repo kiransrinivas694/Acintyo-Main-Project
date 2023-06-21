@@ -42,6 +42,26 @@ const teamDetails = [
   },
 ];
 
+const renderIcons = () => (
+  <ul className="social-media-icons-list">
+    <li className="teams-social-media-icon">
+      <BsTwitter />
+    </li>
+    <li className="teams-social-media-icon">
+      <FaFacebookF />
+    </li>
+    <li className="teams-social-media-icon">
+      <BsDribbble />
+    </li>
+    <li className="teams-social-media-icon">
+      <TfiGoogle />
+    </li>
+    <li className="teams-social-media-icon">
+      <FaLinkedinIn />
+    </li>
+  </ul>
+);
+
 function AboutUs() {
   const [activeAccordion, setActiveAccordion] = useState(
     believeDetails[0].title
@@ -99,23 +119,7 @@ function AboutUs() {
         />
         <h3 className="team-member-name">{teamMember.name}</h3>
         <p className="team-member-role">- {teamMember.role}</p>
-        <ul className="social-media-icons-list">
-          <li className="teams-social-media-icon">
-            <BsTwitter />
-          </li>
-          <li className="teams-social-media-icon">
-            <FaFacebookF />
-          </li>
-          <li className="teams-social-media-icon">
-            <BsDribbble />
-          </li>
-          <li className="teams-social-media-icon">
-            <TfiGoogle />
-          </li>
-          <li className="teams-social-media-icon">
-            <FaLinkedinIn />
-          </li>
-        </ul>
+        {renderIcons()}
       </li>
     );
   });
@@ -179,4 +183,5 @@ function AboutUs() {
   );
 }
 
+export { renderIcons };
 export default AboutUs;

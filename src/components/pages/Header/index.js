@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
-import { BiArrowFromTop, BiArrowToTop } from "react-icons/bi";
+import { SlArrowUp, SlArrowDown } from "react-icons/sl";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./index.css";
 
@@ -126,7 +126,7 @@ function Header() {
             className="header-changing-button"
             onClick={handleTopHeaderChangeClick}
           >
-            {isTopHeaderShowing ? <BiArrowToTop /> : <BiArrowFromTop />}
+            {isTopHeaderShowing ? <SlArrowDown /> : <SlArrowUp />}
           </button>
         </div>
         <div className="header-sub-main">
@@ -143,9 +143,6 @@ function Header() {
             </ul>
           </button>
         </div>
-        {/* <ul className="small-nav-list">
-          {isSmallNavShowing && smallNavContent}
-        </ul> */}
       </div>
       <div className={`page-heading-section ${isHome && "is-home"}`}>
         <div className="page-heading-sub">
