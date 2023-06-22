@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+li,
+ul {
+  list-style-type: none;
+}
+
 .App {
   display: flex;
   flex-direction: column;
