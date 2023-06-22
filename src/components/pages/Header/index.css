@@ -170,6 +170,12 @@
 	}
 }
 
+@media screen and (max-width: 350px) {
+  .small-nav-list {
+    width: 250px;
+  }
+}
+
 .small-nav-list-item {
 	color: white;
 	padding: 10px;
@@ -191,12 +197,12 @@
 }
 
 .page-heading-sub {
-	max-width: 1000px;
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	padding: 40px 10px;
-	background-color: #378ac4;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 10px;
+  background-color: #378ac4;
 }
 
 @media screen and (max-width: 768px) {
