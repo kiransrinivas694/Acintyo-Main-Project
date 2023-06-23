@@ -6,7 +6,6 @@
     flex-direction: column;
     box-sizing: border-box;
 }
-
 .home-container {
     display: flex;
     flex-direction: column;
@@ -14,7 +13,6 @@
     align-items: center;
     background-color: rgb(238, 244, 246);
 }
-
 .sector-card-container {
     max-width: 1200px;
     display: flex;
@@ -25,10 +23,9 @@
     margin-top: 30px;
     padding-bottom: 50px;
 }
-
 .sector-card {
     background-color: #f6f6f6;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     box-sizing: border-box;
     height: 230px;
     width: 330px;
@@ -38,27 +35,24 @@
     margin-top: 30px;
     color: rgb(23, 125, 115);
     font-weight: 500;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
     margin-right: 7.5px;
     margin-left: 7.5px;
     padding: 20px;
     border-radius: 10px;
     transition: 0.3s;
 }
-
 .sector-card:hover {
     margin-top: 15px;
 }
-
 .sector-card div h3 {
     margin-bottom: 10px;
 }
-
 .sector-card div {
     padding-left: 10px;
     font-size: 15px;
 }
-
 .icon {
     box-sizing: border-box;
     font-size: 27px;
@@ -71,7 +65,6 @@
     padding: 11px;
     border: none;
 }
-
 .media {
     margin: auto;
     box-sizing: border-box;
@@ -84,14 +77,12 @@
     padding: 20px;
     align-self: center;
 }
-
 .media h2 {
     color: rgb(23, 125, 115);
     margin-bottom: 20px;
     margin-left: 1.5%;
     align-self: flex-start;
 }
-
 .media-container {
     box-sizing: border-box;
     width: 100%;
@@ -100,24 +91,22 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
 .media-container img {
     height: 30%;
     width: 30%;
     margin: 1.5%;
     min-width: 270px;
     min-height: 270px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-radius: 10px;
     transition: 0.3s;
     flex-grow: 1;
 }
-
 .media-container img:hover {
     transform: scale(1.1);
 }
-
-@media (max-width:726px) {
+@media (max-width: 726px) {
     .sector-card {
         height: 180px;
     }
