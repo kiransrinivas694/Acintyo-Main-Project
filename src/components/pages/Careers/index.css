@@ -39,7 +39,7 @@
 .role-card {
     width: 100%;
     height: 40px;
-    border: solid 1px #51647a;
+    border: none;
     text-align: center;
     padding: 10px;
     border-bottom-left-radius: 40px;
