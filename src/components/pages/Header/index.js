@@ -32,6 +32,14 @@ function Header() {
 		setActiveTab(item.path);
 	};
 
+	const handleTopHeaderChangeClick = () => {
+		setIsTopHeaderShowing(!isTopHeaderShowing);
+	};
+
+	const handleSmallNavBarClick = () => {
+		setIsSmallNavShowing(!isSmallNavShowing);
+	};
+
 	const navItems = [
 		{ path: "home", navItem: "HOME" },
 		{ path: "aboutus", navItem: "ABOUT US" },
@@ -39,9 +47,6 @@ function Header() {
 		{ path: "careers", navItem: "CAREERS" },
 		{ path: "contact", navItem: "CONTACT" },
 	];
-
-	const pageHeading = navItems.find((i) => i.path === activeTab);
-	console.log(pageHeading);
 
 	const content = navItems.map((navItem) => {
 		const isActive = activeTab === navItem.path;
@@ -116,12 +121,38 @@ function Header() {
 				</div>
 			</div>
 			<div className="header-main">
-				<img
-					src="https://acintyo.co.in/images/logo.png"
-					width={200}
-					alt="acintyo logo"
-				/>
-				<ul className="header-nav-list">{content}</ul>
+				<div className="top-header-show-button">
+					<button
+						className="header-changing-button"
+						onClick={handleTopHeaderChangeClick}
+					>
+						{isTopHeaderShowing ? <BiArrowToTop /> : <BiArrowFromTop />}
+					</button>
+				</div>
+				<div className="header-sub-main">
+					<img
+						src="https://acintyo.co.in/images/logo.png"
+						width={170}
+						alt="acintyo logo"
+					/>
+					<ul className="header-nav-list">{content}</ul>
+					<button onClick={handleSmallNavBarClick} className="small-nav-icon">
+						<GiHamburgerMenu />
+						<ul className="small-nav-list">
+							{isSmallNavShowing && smallNavContent}
+						</ul>
+					</button>
+				</div>
+				{/* <ul className="small-nav-list">
+          {isSmallNavShowing && smallNavContent}
+        </ul> */}
+			</div>
+			<div className={`page-heading-section ${isHome && "is-home"}`}>
+				<div className="page-heading-sub">
+					{!isHome && (
+						<h1 className="page-main-heading">{pageHeading[0].navItem}</h1>
+					)}
+				</div>
 			</div>
 		</div>
 	);

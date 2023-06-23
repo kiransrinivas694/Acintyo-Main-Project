@@ -73,7 +73,38 @@
 }
 
 .header-main {
-	width: 60%;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+	.header-main {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+
+.top-header-show-button {
+	background-color: red;
+}
+
+.header-changing-button {
+	font-size: 20px;
+	border: none;
+	padding: 5px 15px;
+	color: #808080;
+}
+
+@media screen and (min-width: 768px) {
+	.top-header-show-button {
+		display: none;
+	}
+}
+
+.header-sub-main {
+	max-width: 1000px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	background-color: #fff;
