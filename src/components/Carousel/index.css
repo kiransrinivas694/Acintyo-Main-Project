@@ -13,6 +13,8 @@
     height: 450px;
     box-sizing: border-box;
     font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .carousel__button__left {
     margin: 0px;
