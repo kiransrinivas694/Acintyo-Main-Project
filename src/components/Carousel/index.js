@@ -26,6 +26,7 @@ const Carousel = ({ images }) => {
         return () => {
             stopSlideShow();
         };
+        // eslint-disable-next-line
     }, [isHovered]);
     return (
         <div onMouseEnter={() => setIsHovered(true)}
