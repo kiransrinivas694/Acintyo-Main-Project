@@ -70,7 +70,11 @@ function Header() {
   const smallNavContent = navItems.map((navItem) => {
     return (
       <li className="small-nav-list-item">
-        <Link to={`/${navItem.path}`} className="small-nav-item-link">
+        <Link
+          to={`/${navItem.path}`}
+          className="small-nav-item-link"
+          onClick={() => handleLinkClick(navItem)}
+        >
           {navItem.navItem}
         </Link>
       </li>
