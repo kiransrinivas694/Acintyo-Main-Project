@@ -70,7 +70,11 @@ function Header() {
 	const smallNavContent = navItems.map((navItem) => {
 		return (
 			<li className="small-nav-list-item">
-				<Link to={`/${navItem.path}`} className="small-nav-item-link">
+				<Link
+					to={`/${navItem.path}`}
+					className="small-nav-item-link"
+					onClick={() => handleLinkClick(navItem)}
+				>
 					{navItem.navItem}
 				</Link>
 			</li>
@@ -143,9 +147,6 @@ function Header() {
 						</ul>
 					</button>
 				</div>
-				{/* <ul className="small-nav-list">
-          {isSmallNavShowing && smallNavContent}
-        </ul> */}
 			</div>
 			<div className={`page-heading-section ${isHome && "is-home"}`}>
 				<div className="page-heading-sub">
